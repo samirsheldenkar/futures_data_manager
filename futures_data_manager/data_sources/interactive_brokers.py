@@ -15,7 +15,7 @@ except ImportError:
     logger.error("ib_insync not installed. Please install it: pip install ib_insync")
     raise
 
-from .base_data_source import BaseDataSource
+from futures_data_manager.data_sources.base_data_source import BaseDataSource
 
 
 class IBDataSource(BaseDataSource):
@@ -167,7 +167,7 @@ class IBDataSource(BaseDataSource):
             self._rate_limit()
             
             # Get IB contract specs from instrument config
-            from ..config.instruments import InstrumentConfig
+            from futures_data_manager.config.instruments import InstrumentConfig
             config = InstrumentConfig()
             ib_specs = config.get_ib_contract_specs(instrument_code)
             
@@ -300,7 +300,7 @@ class IBDataSource(BaseDataSource):
         
         try:
             # Get IB contract specs
-            from ..config.instruments import InstrumentConfig
+            from futures_data_manager.config.instruments import InstrumentConfig
             config = InstrumentConfig()
             ib_specs = config.get_ib_contract_specs(instrument_code)
             
@@ -362,7 +362,7 @@ class IBDataSource(BaseDataSource):
         
         try:
             # Get IB contract specs
-            from ..config.instruments import InstrumentConfig
+            from futures_data_manager.config.instruments import InstrumentConfig
             config = InstrumentConfig()
             ib_specs = config.get_ib_contract_specs(instrument_code)
             

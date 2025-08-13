@@ -1,9 +1,10 @@
 """
-Default roll configuration parameters for different asset classes.
+Roll configuration module for futures contracts.
+Defines default roll parameters and roll cycle configurations.
 """
 
 from typing import Dict, Any
-from .instruments import AssetClass
+from futures_data_manager.config.instruments import AssetClass
 
 
 # Default roll parameters by asset class

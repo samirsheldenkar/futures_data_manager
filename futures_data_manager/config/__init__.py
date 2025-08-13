@@ -3,7 +3,7 @@
 Configuration module for Futures Data Manager
 """
 
-from .instruments import (
+from futures_data_manager.config.instruments import (
     InstrumentConfig,
     InstrumentInfo, 
     AssetClass,

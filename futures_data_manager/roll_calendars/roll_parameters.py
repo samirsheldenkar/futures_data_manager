@@ -1,10 +1,11 @@
 """
-Roll parameter configuration and validation for futures contracts.
+Roll parameters configuration for futures contracts.
+Defines roll cycles, offsets, and other rolling parameters.
 """
 
 from typing import Dict, Any, Optional
 from dataclasses import dataclass
-from ..config.instruments import AssetClass
+from futures_data_manager.config.instruments import AssetClass
 
 
 @dataclass

@@ -11,13 +11,13 @@ from datetime import datetime, timedelta
 import pandas as pd
 from loguru import logger
 
-from .config.instruments import InstrumentConfig
-from .data_sources.interactive_brokers import IBDataSource
-from .data_storage.parquet_storage import ParquetStorage
-from .roll_calendars.roll_calendar_generator import RollCalendarGenerator
-from .price_processing.multiple_prices import MultiplePricesProcessor
-from .price_processing.adjusted_prices import AdjustedPricesProcessor
-from .utils.date_utils import get_business_days_between
+from futures_data_manager.config.instruments import InstrumentConfig
+from futures_data_manager.data_sources.interactive_brokers import IBDataSource
+from futures_data_manager.data_storage.parquet_storage import ParquetStorage
+from futures_data_manager.roll_calendars.roll_calendar_generator import RollCalendarGenerator
+from futures_data_manager.price_processing.multiple_prices import MultiplePricesProcessor
+from futures_data_manager.price_processing.adjusted_prices import AdjustedPricesProcessor
+from futures_data_manager.utils.date_utils import get_business_days_between
 
 
 class FuturesDataManager:
