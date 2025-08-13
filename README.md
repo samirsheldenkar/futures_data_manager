@@ -266,7 +266,7 @@ class FuturesDataManager:
 
 ## License
 
-MIT License - Based on pysystemtrade (GNU GPL v3)
+GNU GPL v3
 
 ## Contributing
 
