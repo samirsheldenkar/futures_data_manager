@@ -36,8 +36,8 @@ else:
 setup(
     name="futures-data-manager",
     version="1.0.0",
-    author="Futures Data Manager Team",
-    author_email="contact@example.com",
+    author="Samir Sheldenkar",
+    author_email="samir@signalsense.co.uk",
     description="Self-contained package for downloading and updating futures price series using Interactive Brokers",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -47,7 +47,7 @@ setup(
         "Development Status :: 4 - Beta",
         "Intended Audience :: Financial and Insurance Industry",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.8",
@@ -58,6 +58,7 @@ setup(
         "Topic :: Office/Business :: Financial :: Investment",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
+    license="GPL-3.0",
     python_requires=">=3.8",
     install_requires=requirements,
     extras_require={
